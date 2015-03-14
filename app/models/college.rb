@@ -1,4 +1,3 @@
 class College < ActiveRecord::Base
-	belong_to :studend
-	
+	belong_to :student_college
 end
