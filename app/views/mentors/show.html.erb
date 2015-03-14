@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mentor.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @mentor.age %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @mentor.dob %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @mentor.bio %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @mentor.image %>
+</p>
+
+<%= link_to 'Edit', edit_mentor_path(@mentor) %> |
+<%= link_to 'Back', mentors_path %>

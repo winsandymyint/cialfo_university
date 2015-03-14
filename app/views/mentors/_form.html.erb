@@ -1,0 +1,37 @@
+<%= form_for(@mentor) do |f| %>
+  <% if @mentor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mentor.errors.count, "error") %> prohibited this mentor from being saved:</h2>
+
+      <ul>
+      <% @mentor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br>
+    <%= f.datetime_select :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :bio %><br>
+    <%= f.text_field :bio %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_area :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
