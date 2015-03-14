@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @college.name %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @college.country %>
+</p>
+
+<p>
+  <strong>Sat min score:</strong>
+  <%= @college.sat_min_score %>
+</p>
+
+<p>
+  <strong>Sat max score:</strong>
+  <%= @college.sat_max_score %>
+</p>
+
+<p>
+  <strong>Tuition fees:</strong>
+  <%= @college.tuition_fees %>
+</p>
+
+<%= link_to 'Edit', edit_college_path(@college) %> |
+<%= link_to 'Back', colleges_path %>

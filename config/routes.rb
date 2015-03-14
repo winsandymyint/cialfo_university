@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :colleges
+
   resources :mentors
 
   resources :students
