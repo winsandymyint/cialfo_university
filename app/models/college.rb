@@ -1,3 +1,3 @@
 class College < ActiveRecord::Base
-	belong_to :student_college
+	has_many :students, :through => :student_college
 end

@@ -1,4 +1,4 @@
 class Student < ActiveRecord::Base
 	belongs_to :mentor
-	belongs_to :student_college
+	has_many :colleges, :through=> :student_college
 end
