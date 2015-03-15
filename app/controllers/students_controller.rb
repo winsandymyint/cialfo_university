@@ -28,6 +28,10 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
+        @student_college= StudentCollege.new
+        @student_college.student_id= @student.id
+        @student_college.college_id= @student.id
+        @student_college.save
         format.html { redirect_to @student, notice: 'Student was successfully created.' }
         format.json { render :show, status: :created, location: @student }
       else
@@ -40,8 +44,10 @@ class StudentsController < ApplicationController
   # PATCH/PUT /students/1
   # PATCH/PUT /students/1.json
   def update
+    arr=[600, 700, 800]
     respond_to do |format|
       if @student.update(student_params)
+        StudentCollege.where(:student_id=> @student.id).update_all(:id=> @student.id, :college_id=> arr)
         format.html { redirect_to @student, notice: 'Student was successfully updated.' }
         format.json { render :show, status: :ok, location: @student }
       else
@@ -55,6 +61,7 @@ class StudentsController < ApplicationController
   # DELETE /students/1.json
   def destroy
     @student.destroy
+    StudentCollege.where(:student_id=> @student.id).destroy_all
     respond_to do |format|
       format.html { redirect_to students_url, notice: 'Student was successfully destroyed.' }
       format.json { head :no_content }

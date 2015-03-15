@@ -1,4 +1,4 @@
 class StudentCollege < ActiveRecord::Base
-	belong_to :student
-	belong_to :college
+	belongs_to :student
+	belongs_to :college
 end

@@ -33,13 +33,6 @@ ActiveRecord::Schema.define(version: 20150314133339) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "student_colleages", force: :cascade do |t|
-    t.integer  "student_id"
-    t.integer  "college_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "student_colleges", force: :cascade do |t|
     t.integer  "student_id"
     t.integer  "college_id"
@@ -55,6 +48,7 @@ ActiveRecord::Schema.define(version: 20150314133339) do
     t.string   "current_level"
     t.string   "country"
     t.integer  "sat_score"
+    t.integer  "mentor_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

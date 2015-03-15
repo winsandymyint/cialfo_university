@@ -39,6 +39,13 @@
     <%= f.label :sat_score %><br>
     <%= f.number_field :sat_score %>
   </div>
+  <div class="colleges">
+    <%= f.label :colleges %><br>
+    <%= f.select "colleges", options_for_select(Student.all.collect{ |u| [u.name, u.id]}), :required => true %>
+    <%= f.select :colleges, College.all.collect {|x| [x.name, x.id]}, {}, :multiple => true %>
+
+    <%# select_tag 'colleges', options_for_select(@student.collect{ |u| [u.name, u.id] })%>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

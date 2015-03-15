@@ -8,6 +8,7 @@ class CreateStudents < ActiveRecord::Migration
       t.string :current_level
       t.string :country
       t.integer :sat_score
+      t.integer :mentor_id
 
       t.timestamps null: false
     end
