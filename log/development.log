@@ -30462,3 +30462,1146 @@ Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" fo
 
 
 Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 00:58:19 +0800
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+
+
+Started GET "/universities" for ::1 at 2015-03-16 01:05:00 +0800
+Processing by UniversitiesController#index as HTML
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered universities/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 170.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/custom-4e2f0806263ebe31c0624fbba4fc098a.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/application-505dfe7d7627c37457a78ea1b73bdc0f.css?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 01:05:00 +0800
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  [1m[35mSQL (7.2ms)[0m  DELETE FROM "universities"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Princeton University"], ["tuition_fees", "$41,820"], ["created_at", "2015-03-15 17:31:06.089007"], ["updated_at", "2015-03-15 17:31:06.089007"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Harvard University"], ["tuition_fees", "$43,938"], ["created_at", "2015-03-15 17:31:06.094307"], ["updated_at", "2015-03-15 17:31:06.094307"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Yale University"], ["tuition_fees", "$45,800"], ["created_at", "2015-03-15 17:31:06.096454"], ["updated_at", "2015-03-15 17:31:06.096454"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Columbia University"], ["tuition_fees", "$51,008"], ["created_at", "2015-03-15 17:31:06.098581"], ["updated_at", "2015-03-15 17:31:06.098581"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Stanford University"], ["tuition_fees", "$44,757"], ["created_at", "2015-03-15 17:31:06.100659"], ["updated_at", "2015-03-15 17:31:06.100659"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Chicago"], ["tuition_fees", "$48,253"], ["created_at", "2015-03-15 17:31:06.102716"], ["updated_at", "2015-03-15 17:31:06.102716"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Massachusetts Institute of Technology"], ["tuition_fees", "$45,016"], ["created_at", "2015-03-15 17:31:06.105050"], ["updated_at", "2015-03-15 17:31:06.105050"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Duke University"], ["tuition_fees", "$47,488"], ["created_at", "2015-03-15 17:31:06.107151"], ["updated_at", "2015-03-15 17:31:06.107151"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Pennsylvania"], ["tuition_fees", "$47,668"], ["created_at", "2015-03-15 17:31:06.109203"], ["updated_at", "2015-03-15 17:31:06.109203"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "California Institute of Technology"], ["tuition_fees", "$43,362"], ["created_at", "2015-03-15 17:31:06.111283"], ["updated_at", "2015-03-15 17:31:06.111283"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Dartmouth College"], ["tuition_fees", "$48,108"], ["created_at", "2015-03-15 17:31:06.113323"], ["updated_at", "2015-03-15 17:31:06.113323"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Johns Hopkins University"], ["tuition_fees", "$47,060"], ["created_at", "2015-03-15 17:31:06.115519"], ["updated_at", "2015-03-15 17:31:06.115519"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Northwestern University"], ["tuition_fees", "$47,251"], ["created_at", "2015-03-15 17:31:06.117688"], ["updated_at", "2015-03-15 17:31:06.117688"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Washington University in St. Louis"], ["tuition_fees", "$46,467"], ["created_at", "2015-03-15 17:31:06.119734"], ["updated_at", "2015-03-15 17:31:06.119734"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Cornell University"], ["tuition_fees", "$47,286"], ["created_at", "2015-03-15 17:31:06.121695"], ["updated_at", "2015-03-15 17:31:06.121695"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Brown University"], ["tuition_fees", "$47,434"], ["created_at", "2015-03-15 17:31:06.123718"], ["updated_at", "2015-03-15 17:31:06.123718"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Notre Dame"], ["tuition_fees", "$46,237"], ["created_at", "2015-03-15 17:31:06.126004"], ["updated_at", "2015-03-15 17:31:06.126004"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vanderbilt University"], ["tuition_fees", "$43,838"], ["created_at", "2015-03-15 17:31:06.128348"], ["updated_at", "2015-03-15 17:31:06.128348"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rice University"], ["tuition_fees", "$40,566"], ["created_at", "2015-03-15 17:31:06.130470"], ["updated_at", "2015-03-15 17:31:06.130470"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of California—​Berkeley"], ["tuition_fees", "in-state: $13,844, out-of-state: $25,064"], ["created_at", "2015-03-15 17:31:06.132547"], ["updated_at", "2015-03-15 17:31:06.132547"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Emory University"], ["tuition_fees", "$45,008"], ["created_at", "2015-03-15 17:31:06.134792"], ["updated_at", "2015-03-15 17:31:06.134792"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Georgetown University"], ["tuition_fees", "$46,744"], ["created_at", "2015-03-15 17:31:06.136961"], ["updated_at", "2015-03-15 17:31:06.136961"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of California—​Los Angeles"], ["tuition_fees", "in-state: $12,702, out-of-state: $35,580"], ["created_at", "2015-03-15 17:31:06.139119"], ["updated_at", "2015-03-15 17:31:06.139119"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Virginia"], ["tuition_fees", "in-state: $12,998, out-of-state: $42,184"], ["created_at", "2015-03-15 17:31:06.141351"], ["updated_at", "2015-03-15 17:31:06.141351"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Carnegie Mellon University"], ["tuition_fees", "$48,786"], ["created_at", "2015-03-15 17:31:06.143441"], ["updated_at", "2015-03-15 17:31:06.143441"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Southern California"], ["tuition_fees", "$48,280"], ["created_at", "2015-03-15 17:31:06.145670"], ["updated_at", "2015-03-15 17:31:06.145670"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tufts University"], ["tuition_fees", "$48,643"], ["created_at", "2015-03-15 17:31:06.147913"], ["updated_at", "2015-03-15 17:31:06.147913"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wake Forest University"], ["tuition_fees", "$46,200"], ["created_at", "2015-03-15 17:31:06.150011"], ["updated_at", "2015-03-15 17:31:06.150011"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Michigan—​Ann Arbor"], ["tuition_fees", "in-state: $13,977, out-of-state: $41,811"], ["created_at", "2015-03-15 17:31:06.152230"], ["updated_at", "2015-03-15 17:31:06.152230"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of North Carolina—​Chapel Hill"], ["tuition_fees", "in-state: $8,374, out-of-state: $33,624"], ["created_at", "2015-03-15 17:31:06.154332"], ["updated_at", "2015-03-15 17:31:06.154332"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Boston College"], ["tuition_fees", "$47,436"], ["created_at", "2015-03-15 17:31:06.156438"], ["updated_at", "2015-03-15 17:31:06.156438"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New York University"], ["tuition_fees", "$46,170"], ["created_at", "2015-03-15 17:31:06.158568"], ["updated_at", "2015-03-15 17:31:06.158568"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "College of William and Mary"], ["tuition_fees", "in-state: $17,656, out-of-state: $39,360"], ["created_at", "2015-03-15 17:31:06.161016"], ["updated_at", "2015-03-15 17:31:06.161016"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Rochester"], ["tuition_fees", "$46,960"], ["created_at", "2015-03-15 17:31:06.163801"], ["updated_at", "2015-03-15 17:31:06.163801"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Brandeis University"], ["tuition_fees", "$47,833"], ["created_at", "2015-03-15 17:31:06.166078"], ["updated_at", "2015-03-15 17:31:06.166078"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Georgia Institute of Technology"], ["tuition_fees", "in-state: $11,394, out-of-state: $30,698"], ["created_at", "2015-03-15 17:31:06.168389"], ["updated_at", "2015-03-15 17:31:06.168389"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of California—​San Diego"], ["tuition_fees", "in-state: $13,302, out-of-state: $36,180"], ["created_at", "2015-03-15 17:31:06.170609"], ["updated_at", "2015-03-15 17:31:06.170609"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Case Western Reserve University"], ["tuition_fees", "$43,158"], ["created_at", "2015-03-15 17:31:06.173260"], ["updated_at", "2015-03-15 17:31:06.173260"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of California—​Davis"], ["tuition_fees", "in-state: $13,896, out-of-state: $36,774"], ["created_at", "2015-03-15 17:31:06.175451"], ["updated_at", "2015-03-15 17:31:06.175451"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lehigh University"], ["tuition_fees", "$44,890"], ["created_at", "2015-03-15 17:31:06.177596"], ["updated_at", "2015-03-15 17:31:06.177596"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of California—​Santa Barbara"], ["tuition_fees", "in-state: $13,746, out-of-state: $36,624"], ["created_at", "2015-03-15 17:31:06.180056"], ["updated_at", "2015-03-15 17:31:06.180056"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Boston University"], ["tuition_fees", "$46,664"], ["created_at", "2015-03-15 17:31:06.182390"], ["updated_at", "2015-03-15 17:31:06.182390"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Northeastern University"], ["tuition_fees", "$43,440"], ["created_at", "2015-03-15 17:31:06.184639"], ["updated_at", "2015-03-15 17:31:06.184639"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rensselaer Polytechnic Institute"], ["tuition_fees", "$47,908"], ["created_at", "2015-03-15 17:31:06.186749"], ["updated_at", "2015-03-15 17:31:06.186749"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of California—​Irvine"], ["tuition_fees", "in-state: $14,757, out-of-state: $37,635"], ["created_at", "2015-03-15 17:31:06.188854"], ["updated_at", "2015-03-15 17:31:06.188854"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Illinois—​Urbana-​Champaign"], ["tuition_fees", "in-state: $15,602, out-of-state: $30,228"], ["created_at", "2015-03-15 17:31:06.191020"], ["updated_at", "2015-03-15 17:31:06.191020"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Wisconsin—​Madison"], ["tuition_fees", "in-state: $10,410, out-of-state: $26,660"], ["created_at", "2015-03-15 17:31:06.193233"], ["updated_at", "2015-03-15 17:31:06.193233"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pennsylvania State University—​University Park"], ["tuition_fees", "in-state: $17,502, out-of-state: $30,452"], ["created_at", "2015-03-15 17:31:06.195475"], ["updated_at", "2015-03-15 17:31:06.195475"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Florida"], ["tuition_fees", "in-state: $6,313, out-of-state: $28,591"], ["created_at", "2015-03-15 17:31:06.197814"], ["updated_at", "2015-03-15 17:31:06.197814"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Miami"], ["tuition_fees", "$44,350"], ["created_at", "2015-03-15 17:31:06.200124"], ["updated_at", "2015-03-15 17:31:06.200124"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Washington"], ["tuition_fees", "in-state: $12,394, out-of-state: $33,513"], ["created_at", "2015-03-15 17:31:06.202399"], ["updated_at", "2015-03-15 17:31:06.202399"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Yeshiva University"], ["tuition_fees", "$38,730"], ["created_at", "2015-03-15 17:31:06.204601"], ["updated_at", "2015-03-15 17:31:06.204601"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Texas—​Austin"], ["tuition_fees", "in-state: $9,798, out-of-state: $34,722"], ["created_at", "2015-03-15 17:31:06.207192"], ["updated_at", "2015-03-15 17:31:06.207192"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "George Washington University"], ["tuition_fees", "$48,760"], ["created_at", "2015-03-15 17:31:06.209734"], ["updated_at", "2015-03-15 17:31:06.209734"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ohio State University—​Columbus"], ["tuition_fees", "in-state: $10,037, out-of-state: $26,537"], ["created_at", "2015-03-15 17:31:06.214295"], ["updated_at", "2015-03-15 17:31:06.214295"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pepperdine University"], ["tuition_fees", "$46,692"], ["created_at", "2015-03-15 17:31:06.216849"], ["updated_at", "2015-03-15 17:31:06.216849"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tulane University"], ["tuition_fees", "$48,305"], ["created_at", "2015-03-15 17:31:06.219063"], ["updated_at", "2015-03-15 17:31:06.219063"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fordham University"], ["tuition_fees", "$43,577"], ["created_at", "2015-03-15 17:31:06.221186"], ["updated_at", "2015-03-15 17:31:06.221186"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Southern Methodist University"], ["tuition_fees", "$45,940"], ["created_at", "2015-03-15 17:31:06.223333"], ["updated_at", "2015-03-15 17:31:06.223333"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Syracuse University"], ["tuition_fees", "$41,886"], ["created_at", "2015-03-15 17:31:06.225448"], ["updated_at", "2015-03-15 17:31:06.225448"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Connecticut"], ["tuition_fees", "in-state: $12,700, out-of-state: $32,880"], ["created_at", "2015-03-15 17:31:06.227958"], ["updated_at", "2015-03-15 17:31:06.227958"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Brigham Young University—​Provo"], ["tuition_fees", "$5,000"], ["created_at", "2015-03-15 17:31:06.230204"], ["updated_at", "2015-03-15 17:31:06.230204"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Clemson University"], ["tuition_fees", "in-state: $13,382, out-of-state: $30,816"], ["created_at", "2015-03-15 17:31:06.232307"], ["updated_at", "2015-03-15 17:31:06.232307"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Purdue University—​West Lafayette"], ["tuition_fees", "in-state: $10,002, out-of-state: $28,804"], ["created_at", "2015-03-15 17:31:06.234518"], ["updated_at", "2015-03-15 17:31:06.234518"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Georgia"], ["tuition_fees", "in-state: $10,836, out-of-state: $29,046"], ["created_at", "2015-03-15 17:31:06.236616"], ["updated_at", "2015-03-15 17:31:06.236616"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Maryland—​College Park"], ["tuition_fees", "in-state: $9,427, out-of-state: $29,720"], ["created_at", "2015-03-15 17:31:06.239064"], ["updated_at", "2015-03-15 17:31:06.239064"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Pittsburgh"], ["tuition_fees", "in-state: $17,772, out-of-state: $28,168"], ["created_at", "2015-03-15 17:31:06.241255"], ["updated_at", "2015-03-15 17:31:06.241255"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Texas A&M University—​College Station"], ["tuition_fees", "in-state: $9,180, out-of-state: $26,356"], ["created_at", "2015-03-15 17:31:06.243345"], ["updated_at", "2015-03-15 17:31:06.243345"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Worcester Polytechnic Institute"], ["tuition_fees", "$42,778"], ["created_at", "2015-03-15 17:31:06.245438"], ["updated_at", "2015-03-15 17:31:06.245438"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rutgers, The State University of New Jersey—​New Brunswick"], ["tuition_fees", "in-state: $13,813, out-of-state: $28,591"], ["created_at", "2015-03-15 17:31:06.247515"], ["updated_at", "2015-03-15 17:31:06.247515"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "American University"], ["tuition_fees", "$41,833"], ["created_at", "2015-03-15 17:31:06.249862"], ["updated_at", "2015-03-15 17:31:06.249862"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Baylor University"], ["tuition_fees", "$38,290"], ["created_at", "2015-03-15 17:31:06.252023"], ["updated_at", "2015-03-15 17:31:06.252023"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Iowa"], ["tuition_fees", "in-state: $8,079, out-of-state: $27,409"], ["created_at", "2015-03-15 17:31:06.254124"], ["updated_at", "2015-03-15 17:31:06.254124"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Minnesota—​Twin Cities"], ["tuition_fees", "in-state: $13,626, out-of-state: $20,876"], ["created_at", "2015-03-15 17:31:06.256203"], ["updated_at", "2015-03-15 17:31:06.256203"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Virginia Tech"], ["tuition_fees", "in-state: $12,017, out-of-state: $27,444"], ["created_at", "2015-03-15 17:31:06.258327"], ["updated_at", "2015-03-15 17:31:06.258327"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Clark University"], ["tuition_fees", "$40,730"], ["created_at", "2015-03-15 17:31:06.260672"], ["updated_at", "2015-03-15 17:31:06.260672"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Indiana University—​Bloomington"], ["tuition_fees", "in-state: $10,388, out-of-state: $33,241"], ["created_at", "2015-03-15 17:31:06.263418"], ["updated_at", "2015-03-15 17:31:06.263418"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Marquette University"], ["tuition_fees", "$35,930"], ["created_at", "2015-03-15 17:31:06.265713"], ["updated_at", "2015-03-15 17:31:06.265713"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Miami University—​Oxford"], ["tuition_fees", "in-state: $14,287, out-of-state: $30,394"], ["created_at", "2015-03-15 17:31:06.267803"], ["updated_at", "2015-03-15 17:31:06.267803"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Stevens Institute of Technology"], ["tuition_fees", "$44,490"], ["created_at", "2015-03-15 17:31:06.269920"], ["updated_at", "2015-03-15 17:31:06.269920"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "SUNY College of Environmental Science and Forestry"], ["tuition_fees", "in-state: $7,303, out-of-state: $16,953"], ["created_at", "2015-03-15 17:31:06.272250"], ["updated_at", "2015-03-15 17:31:06.272250"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Texas Christian University"], ["tuition_fees", "$38,600"], ["created_at", "2015-03-15 17:31:06.274385"], ["updated_at", "2015-03-15 17:31:06.274385"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Delaware"], ["tuition_fees", "in-state: $12,342, out-of-state: $30,692"], ["created_at", "2015-03-15 17:31:06.276881"], ["updated_at", "2015-03-15 17:31:06.276881"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Massachusetts—​Amherst"], ["tuition_fees", "in-state: $13,258, out-of-state: $28,813"], ["created_at", "2015-03-15 17:31:06.278952"], ["updated_at", "2015-03-15 17:31:06.278952"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Michigan State University"], ["tuition_fees", "in-state: $13,200, out-of-state: $34,980"], ["created_at", "2015-03-15 17:31:06.281036"], ["updated_at", "2015-03-15 17:31:06.281036"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of California—​Santa Cruz"], ["tuition_fees", "in-state: $13,398, out-of-state: $36,276"], ["created_at", "2015-03-15 17:31:06.283474"], ["updated_at", "2015-03-15 17:31:06.283474"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Vermont"], ["tuition_fees", "in-state: $16,226, out-of-state: $37,874"], ["created_at", "2015-03-15 17:31:06.285651"], ["updated_at", "2015-03-15 17:31:06.285651"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Binghamton University—​SUNY"], ["tuition_fees", "in-state: $8,619, out-of-state: $20,259"], ["created_at", "2015-03-15 17:31:06.287752"], ["updated_at", "2015-03-15 17:31:06.287752"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Colorado School of Mines"], ["tuition_fees", "in-state: $16,918, out-of-state: $33,598"], ["created_at", "2015-03-15 17:31:06.289870"], ["updated_at", "2015-03-15 17:31:06.289870"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Stony Brook University—​SUNY"], ["tuition_fees", "in-state: $8,430, out-of-state: $21,850"], ["created_at", "2015-03-15 17:31:06.292034"], ["updated_at", "2015-03-15 17:31:06.292034"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Alabama"], ["tuition_fees", "in-state: $9,826, out-of-state: $24,950"], ["created_at", "2015-03-15 17:31:06.294524"], ["updated_at", "2015-03-15 17:31:06.294524"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Colorado—​Boulder"], ["tuition_fees", "in-state: $10,789, out-of-state: $33,151"], ["created_at", "2015-03-15 17:31:06.297049"], ["updated_at", "2015-03-15 17:31:06.297049"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Denver"], ["tuition_fees", "$42,090"], ["created_at", "2015-03-15 17:31:06.299379"], ["updated_at", "2015-03-15 17:31:06.299379"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Tulsa"], ["tuition_fees", "$34,704"], ["created_at", "2015-03-15 17:31:06.302280"], ["updated_at", "2015-03-15 17:31:06.302280"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Drexel University"], ["tuition_fees", "$47,051"], ["created_at", "2015-03-15 17:31:06.304656"], ["updated_at", "2015-03-15 17:31:06.304656"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Florida State University"], ["tuition_fees", "in-state: $6,507, out-of-state: $21,673"], ["created_at", "2015-03-15 17:31:06.307621"], ["updated_at", "2015-03-15 17:31:06.307621"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "North Carolina State University—​Raleigh"], ["tuition_fees", "in-state: $8,296, out-of-state: $23,551"], ["created_at", "2015-03-15 17:31:06.310660"], ["updated_at", "2015-03-15 17:31:06.310660"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of San Diego"], ["tuition_fees", "$42,908"], ["created_at", "2015-03-15 17:31:06.312997"], ["updated_at", "2015-03-15 17:31:06.312997"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "St. Louis University"], ["tuition_fees", "$37,966"], ["created_at", "2015-03-15 17:31:06.315435"], ["updated_at", "2015-03-15 17:31:06.315435"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Missouri"], ["tuition_fees", "in-state: $9,433, out-of-state: $24,460"], ["created_at", "2015-03-15 17:31:06.318032"], ["updated_at", "2015-03-15 17:31:06.318032"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Nebraska—​Lincoln"], ["tuition_fees", "in-state: $8,060, out-of-state: $21,388"], ["created_at", "2015-03-15 17:31:06.320320"], ["updated_at", "2015-03-15 17:31:06.320320"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of New Hampshire"], ["tuition_fees", "in-state: $16,552, out-of-state: $29,532"], ["created_at", "2015-03-15 17:31:06.322574"], ["updated_at", "2015-03-15 17:31:06.322574"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Auburn University"], ["tuition_fees", "in-state: $10,200, out-of-state: $27,384"], ["created_at", "2015-03-15 17:31:06.324702"], ["updated_at", "2015-03-15 17:31:06.324702"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University at Buffalo—​SUNY"], ["tuition_fees", "in-state: $8,426, out-of-state: $20,366"], ["created_at", "2015-03-15 17:31:06.327220"], ["updated_at", "2015-03-15 17:31:06.327220"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Dayton"], ["tuition_fees", "$37,230"], ["created_at", "2015-03-15 17:31:06.329730"], ["updated_at", "2015-03-15 17:31:06.329730"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Iowa State University"], ["tuition_fees", "in-state: $7,731, out-of-state: $20,617"], ["created_at", "2015-03-15 17:31:06.331973"], ["updated_at", "2015-03-15 17:31:06.331973"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Loyola University Chicago"], ["tuition_fees", "$37,412"], ["created_at", "2015-03-15 17:31:06.334092"], ["updated_at", "2015-03-15 17:31:06.334092"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Kansas"], ["tuition_fees", "in-state: $10,448, out-of-state: $25,731"], ["created_at", "2015-03-15 17:31:06.336392"], ["updated_at", "2015-03-15 17:31:06.336392"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Oklahoma"], ["tuition_fees", "in-state: $7,695, out-of-state: $20,469"], ["created_at", "2015-03-15 17:31:06.338689"], ["updated_at", "2015-03-15 17:31:06.338689"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Oregon"], ["tuition_fees", "in-state: $9,918, out-of-state: $30,888"], ["created_at", "2015-03-15 17:31:06.340839"], ["updated_at", "2015-03-15 17:31:06.340839"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of San Francisco"], ["tuition_fees", "$41,450"], ["created_at", "2015-03-15 17:31:06.342948"], ["updated_at", "2015-03-15 17:31:06.342948"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Tennessee"], ["tuition_fees", "in-state: $11,246, out-of-state: $29,696"], ["created_at", "2015-03-15 17:31:06.345051"], ["updated_at", "2015-03-15 17:31:06.345051"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of California—​Riverside"], ["tuition_fees", "in-state: $13,408, out-of-state: $36,286"], ["created_at", "2015-03-15 17:31:06.347198"], ["updated_at", "2015-03-15 17:31:06.347198"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of South Carolina"], ["tuition_fees", "in-state: $11,158, out-of-state: $29,440"], ["created_at", "2015-03-15 17:31:06.349462"], ["updated_at", "2015-03-15 17:31:06.349462"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of St. Thomas"], ["tuition_fees", "$34,442"], ["created_at", "2015-03-15 17:31:06.352522"], ["updated_at", "2015-03-15 17:31:06.352522"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "The Catholic University of America"], ["tuition_fees", "$39,726"], ["created_at", "2015-03-15 17:31:06.355144"], ["updated_at", "2015-03-15 17:31:06.355144"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Duquesne University"], ["tuition_fees", "$32,636"], ["created_at", "2015-03-15 17:31:06.357276"], ["updated_at", "2015-03-15 17:31:06.357276"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Illinois Institute of Technology"], ["tuition_fees", "$41,335"], ["created_at", "2015-03-15 17:31:06.360293"], ["updated_at", "2015-03-15 17:31:06.360293"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Michigan Technological University"], ["tuition_fees", "in-state: $14,040, out-of-state: $29,520"], ["created_at", "2015-03-15 17:31:06.362469"], ["updated_at", "2015-03-15 17:31:06.362469"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of the Pacific"], ["tuition_fees", "$41,342"], ["created_at", "2015-03-15 17:31:06.364567"], ["updated_at", "2015-03-15 17:31:06.364567"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Clarkson University"], ["tuition_fees", "$42,530"], ["created_at", "2015-03-15 17:31:06.366702"], ["updated_at", "2015-03-15 17:31:06.366702"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Colorado State University"], ["tuition_fees", "in-state: $9,897, out-of-state: $26,077"], ["created_at", "2015-03-15 17:31:06.369075"], ["updated_at", "2015-03-15 17:31:06.369075"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "DePaul University"], ["tuition_fees", "$35,071"], ["created_at", "2015-03-15 17:31:06.371310"], ["updated_at", "2015-03-15 17:31:06.371310"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Temple University"], ["tuition_fees", "in-state: $14,770, out-of-state: $25,450"], ["created_at", "2015-03-15 17:31:06.373473"], ["updated_at", "2015-03-15 17:31:06.373473"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Arizona"], ["tuition_fees", "in-state: $10,581, out-of-state: $28,379"], ["created_at", "2015-03-15 17:31:06.375576"], ["updated_at", "2015-03-15 17:31:06.375576"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rutgers, The State University of New Jersey—​Newark"], ["tuition_fees", "in-state: $13,297, out-of-state: $28,075"], ["created_at", "2015-03-15 17:31:06.377739"], ["updated_at", "2015-03-15 17:31:06.377739"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Seton Hall University"], ["tuition_fees", "$36,926"], ["created_at", "2015-03-15 17:31:06.380221"], ["updated_at", "2015-03-15 17:31:06.380221"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University at Albany—​SUNY"], ["tuition_fees", "in-state: $8,527, out-of-state: $20,167"], ["created_at", "2015-03-15 17:31:06.382655"], ["updated_at", "2015-03-15 17:31:06.382655"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Arizona State University—​Tempe"], ["tuition_fees", "in-state: $9,811, out-of-state: $23,312"], ["created_at", "2015-03-15 17:31:06.384791"], ["updated_at", "2015-03-15 17:31:06.384791"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Louisiana State University—​Baton Rouge"], ["tuition_fees", "in-state: $8,750, out-of-state: $26,467"], ["created_at", "2015-03-15 17:31:06.386911"], ["updated_at", "2015-03-15 17:31:06.386911"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ohio University"], ["tuition_fees", "in-state: $10,536, out-of-state: $19,500"], ["created_at", "2015-03-15 17:31:06.389090"], ["updated_at", "2015-03-15 17:31:06.389090"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Cincinnati"], ["tuition_fees", "in-state: $11,000, out-of-state: $26,334"], ["created_at", "2015-03-15 17:31:06.391247"], ["updated_at", "2015-03-15 17:31:06.391247"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Kentucky"], ["tuition_fees", "in-state: $10,616, out-of-state: $22,888"], ["created_at", "2015-03-15 17:31:06.393474"], ["updated_at", "2015-03-15 17:31:06.393474"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Utah"], ["tuition_fees", "in-state: $7,935, out-of-state: $25,267"], ["created_at", "2015-03-15 17:31:06.395757"], ["updated_at", "2015-03-15 17:31:06.395757"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Hofstra University"], ["tuition_fees", "$38,900"], ["created_at", "2015-03-15 17:31:06.398100"], ["updated_at", "2015-03-15 17:31:06.398100"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New School"], ["tuition_fees", "$41,836"], ["created_at", "2015-03-15 17:31:06.400284"], ["updated_at", "2015-03-15 17:31:06.400284"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Arkansas"], ["tuition_fees", "in-state: $8,210, out-of-state: $20,300"], ["created_at", "2015-03-15 17:31:06.402882"], ["updated_at", "2015-03-15 17:31:06.402882"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "George Mason University"], ["tuition_fees", "in-state: $10,382, out-of-state: $29,960"], ["created_at", "2015-03-15 17:31:06.405405"], ["updated_at", "2015-03-15 17:31:06.405405"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Missouri University of Science & Technology"], ["tuition_fees", "in-state: $9,537, out-of-state: $25,404"], ["created_at", "2015-03-15 17:31:06.407627"], ["updated_at", "2015-03-15 17:31:06.407627"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Oregon State University"], ["tuition_fees", "in-state: $8,276, out-of-state: $23,540"], ["created_at", "2015-03-15 17:31:06.409778"], ["updated_at", "2015-03-15 17:31:06.409778"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Washington State University"], ["tuition_fees", "in-state: $12,428, out-of-state: $25,510"], ["created_at", "2015-03-15 17:31:06.412091"], ["updated_at", "2015-03-15 17:31:06.412091"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Illinois State University"], ["tuition_fees", "in-state: $12,830, out-of-state: $20,420"], ["created_at", "2015-03-15 17:31:06.414993"], ["updated_at", "2015-03-15 17:31:06.414993"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Kansas State University"], ["tuition_fees", "in-state: $9,034, out-of-state: $22,624"], ["created_at", "2015-03-15 17:31:06.417886"], ["updated_at", "2015-03-15 17:31:06.417886"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "St. John Fisher College"], ["tuition_fees", "$29,550"], ["created_at", "2015-03-15 17:31:06.420744"], ["updated_at", "2015-03-15 17:31:06.420744"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Howard University"], ["tuition_fees", "$23,970"], ["created_at", "2015-03-15 17:31:06.423110"], ["updated_at", "2015-03-15 17:31:06.423110"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Oklahoma State University"], ["tuition_fees", "in-state: $7,442, out-of-state: $20,027"], ["created_at", "2015-03-15 17:31:06.425311"], ["updated_at", "2015-03-15 17:31:06.425311"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "St. John's University"], ["tuition_fees", "$38,680"], ["created_at", "2015-03-15 17:31:06.427580"], ["updated_at", "2015-03-15 17:31:06.427580"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Texas—​Dallas"], ["tuition_fees", "in-state: $11,806, out-of-state: $30,378"], ["created_at", "2015-03-15 17:31:06.429907"], ["updated_at", "2015-03-15 17:31:06.429907"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Adelphi University"], ["tuition_fees", "$32,340"], ["created_at", "2015-03-15 17:31:06.432204"], ["updated_at", "2015-03-15 17:31:06.432204"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Jersey Institute of Technology"], ["tuition_fees", "in-state: $15,602, out-of-state: $28,274"], ["created_at", "2015-03-15 17:31:06.434355"], ["updated_at", "2015-03-15 17:31:06.434355"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "San Diego State University"], ["tuition_fees", "in-state: $6,866, out-of-state: $18,026"], ["created_at", "2015-03-15 17:31:06.436542"], ["updated_at", "2015-03-15 17:31:06.436542"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Alabama—​Birmingham"], ["tuition_fees", "in-state: $9,280, out-of-state: $21,220"], ["created_at", "2015-03-15 17:31:06.438773"], ["updated_at", "2015-03-15 17:31:06.438773"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Illinois—​Chicago"], ["tuition_fees", "in-state: $13,640, out-of-state: $26,030"], ["created_at", "2015-03-15 17:31:06.440924"], ["updated_at", "2015-03-15 17:31:06.440924"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Maryland—​Baltimore County"], ["tuition_fees", "in-state: $10,068, out-of-state: $21,642"], ["created_at", "2015-03-15 17:31:06.443073"], ["updated_at", "2015-03-15 17:31:06.443073"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Mississippi"], ["tuition_fees", "in-state: $7,096, out-of-state: $19,144"], ["created_at", "2015-03-15 17:31:06.445291"], ["updated_at", "2015-03-15 17:31:06.445291"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Maryville University of St. Louis"], ["tuition_fees", "$25,884"], ["created_at", "2015-03-15 17:31:06.447823"], ["updated_at", "2015-03-15 17:31:06.447823"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mississippi State University"], ["tuition_fees", "in-state: $6,772, out-of-state: $16,960"], ["created_at", "2015-03-15 17:31:06.450079"], ["updated_at", "2015-03-15 17:31:06.450079"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Texas Tech University"], ["tuition_fees", "in-state: $9,308, out-of-state: $20,168"], ["created_at", "2015-03-15 17:31:06.452276"], ["updated_at", "2015-03-15 17:31:06.452276"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Massachusetts—​Lowell"], ["tuition_fees", "in-state: $12,447, out-of-state: $19,560"], ["created_at", "2015-03-15 17:31:06.454629"], ["updated_at", "2015-03-15 17:31:06.454629"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Virginia Commonwealth University"], ["tuition_fees", "in-state: $12,398, out-of-state: $29,847"], ["created_at", "2015-03-15 17:31:06.456806"], ["updated_at", "2015-03-15 17:31:06.456806"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Biola University"], ["tuition_fees", "$33,322"], ["created_at", "2015-03-15 17:31:06.459484"], ["updated_at", "2015-03-15 17:31:06.459484"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Louisville"], ["tuition_fees", "in-state: $10,432, out-of-state: $24,320"], ["created_at", "2015-03-15 17:31:06.461914"], ["updated_at", "2015-03-15 17:31:06.461914"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Rhode Island"], ["tuition_fees", "in-state: $12,506, out-of-state: $28,072"], ["created_at", "2015-03-15 17:31:06.464128"], ["updated_at", "2015-03-15 17:31:06.464128"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of South Florida"], ["tuition_fees", "in-state: $6,410, out-of-state: $17,325"], ["created_at", "2015-03-15 17:31:06.466335"], ["updated_at", "2015-03-15 17:31:06.466335"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Wyoming"], ["tuition_fees", "in-state: $4,646, out-of-state: $14,876"], ["created_at", "2015-03-15 17:31:06.468477"], ["updated_at", "2015-03-15 17:31:06.468477"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Idaho"], ["tuition_fees", "in-state: $6,784, out-of-state: $20,314"], ["created_at", "2015-03-15 17:31:06.470670"], ["updated_at", "2015-03-15 17:31:06.470670"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of La Verne"], ["tuition_fees", "$36,744"], ["created_at", "2015-03-15 17:31:06.472884"], ["updated_at", "2015-03-15 17:31:06.472884"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Andrews University"], ["tuition_fees", "$26,262"], ["created_at", "2015-03-15 17:31:06.475066"], ["updated_at", "2015-03-15 17:31:06.475066"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Hawaii—​Manoa"], ["tuition_fees", "in-state: $10,620, out-of-state: $29,412"], ["created_at", "2015-03-15 17:31:06.477219"], ["updated_at", "2015-03-15 17:31:06.477219"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of North Dakota"], ["tuition_fees", "in-state: $7,508, out-of-state: $17,794"], ["created_at", "2015-03-15 17:31:06.479346"], ["updated_at", "2015-03-15 17:31:06.479346"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of South Dakota"], ["tuition_fees", "in-state: $8,022, out-of-state: $10,104"], ["created_at", "2015-03-15 17:31:06.481543"], ["updated_at", "2015-03-15 17:31:06.481543"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "West Virginia University"], ["tuition_fees", "in-state: $6,960, out-of-state: $20,424"], ["created_at", "2015-03-15 17:31:06.483707"], ["updated_at", "2015-03-15 17:31:06.483707"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Azusa Pacific University"], ["tuition_fees", "$33,096"], ["created_at", "2015-03-15 17:31:06.485860"], ["updated_at", "2015-03-15 17:31:06.485860"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ball State University"], ["tuition_fees", "in-state: $9,344, out-of-state: $24,610"], ["created_at", "2015-03-15 17:31:06.487958"], ["updated_at", "2015-03-15 17:31:06.487958"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bowling Green State University"], ["tuition_fees", "in-state: $10,726, out-of-state: $18,034"], ["created_at", "2015-03-15 17:31:06.490082"], ["updated_at", "2015-03-15 17:31:06.490082"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Florida Institute of Technology"], ["tuition_fees", "$37,990"], ["created_at", "2015-03-15 17:31:06.492184"], ["updated_at", "2015-03-15 17:31:06.492184"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pace University"], ["tuition_fees", "$39,747"], ["created_at", "2015-03-15 17:31:06.494368"], ["updated_at", "2015-03-15 17:31:06.494368"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Central Florida"], ["tuition_fees", "in-state: $6,368, out-of-state: $22,467"], ["created_at", "2015-03-15 17:31:06.496515"], ["updated_at", "2015-03-15 17:31:06.496515"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Maine"], ["tuition_fees", "in-state: $10,604, out-of-state: $28,484"], ["created_at", "2015-03-15 17:31:06.498703"], ["updated_at", "2015-03-15 17:31:06.498703"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Western Michigan University"], ["tuition_fees", "in-state: $10,685, out-of-state: $24,917"], ["created_at", "2015-03-15 17:31:06.500755"], ["updated_at", "2015-03-15 17:31:06.500755"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Edgewood College"], ["tuition_fees", "$25,590"], ["created_at", "2015-03-15 17:31:06.503196"], ["updated_at", "2015-03-15 17:31:06.503196"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Immaculata University"], ["tuition_fees", "$30,740"], ["created_at", "2015-03-15 17:31:06.506142"], ["updated_at", "2015-03-15 17:31:06.506142"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "North Dakota State University"], ["tuition_fees", "in-state: $7,660, out-of-state: $18,242"], ["created_at", "2015-03-15 17:31:06.508652"], ["updated_at", "2015-03-15 17:31:06.508652"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Dakota State University"], ["tuition_fees", "in-state: $7,713, out-of-state: $9,795"], ["created_at", "2015-03-15 17:31:06.510920"], ["updated_at", "2015-03-15 17:31:06.510920"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Spalding University"], ["tuition_fees", "$22,425"], ["created_at", "2015-03-15 17:31:06.513371"], ["updated_at", "2015-03-15 17:31:06.513371"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "St. Mary's University of Minnesota"], ["tuition_fees", "$30,315"], ["created_at", "2015-03-15 17:31:06.516411"], ["updated_at", "2015-03-15 17:31:06.516411"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Alabama—​Huntsville"], ["tuition_fees", "in-state: $9,158, out-of-state: $21,232"], ["created_at", "2015-03-15 17:31:06.519324"], ["updated_at", "2015-03-15 17:31:06.519324"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of North Carolina—​Greensboro"], ["tuition_fees", "in-state: $6,442, out-of-state: $21,304"], ["created_at", "2015-03-15 17:31:06.522001"], ["updated_at", "2015-03-15 17:31:06.522001"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Southern Illinois University—​Carbondale"], ["tuition_fees", "in-state: $12,251, out-of-state: $24,874"], ["created_at", "2015-03-15 17:31:06.524286"], ["updated_at", "2015-03-15 17:31:06.524286"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Houston"], ["tuition_fees", "in-state: $10,518, out-of-state: $24,378"], ["created_at", "2015-03-15 17:31:06.526529"], ["updated_at", "2015-03-15 17:31:06.526529"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Missouri—​Kansas City"], ["tuition_fees", "in-state: $9,582, out-of-state: $22,641"], ["created_at", "2015-03-15 17:31:06.528885"], ["updated_at", "2015-03-15 17:31:06.528885"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of New Mexico"], ["tuition_fees", "in-state: $6,846, out-of-state: $20,688"], ["created_at", "2015-03-15 17:31:06.531043"], ["updated_at", "2015-03-15 17:31:06.531043"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Widener University"], ["tuition_fees", "$39,830"], ["created_at", "2015-03-15 17:31:06.533204"], ["updated_at", "2015-03-15 17:31:06.533204"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Central Michigan University"], ["tuition_fees", "in-state: $11,550, out-of-state: $23,670"], ["created_at", "2015-03-15 17:31:06.535428"], ["updated_at", "2015-03-15 17:31:06.535428"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Indiana University-​Purdue University—​Indianapolis"], ["tuition_fees", "in-state: $8,909, out-of-state: $30,089"], ["created_at", "2015-03-15 17:31:06.537679"], ["updated_at", "2015-03-15 17:31:06.537679"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kent State University"], ["tuition_fees", "in-state: $10,012, out-of-state: $17,972"], ["created_at", "2015-03-15 17:31:06.539878"], ["updated_at", "2015-03-15 17:31:06.539878"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Northern Illinois University"], ["tuition_fees", "in-state: $13,636, out-of-state: $22,914"], ["created_at", "2015-03-15 17:31:06.542026"], ["updated_at", "2015-03-15 17:31:06.542026"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Montana"], ["tuition_fees", "in-state: $6,330, out-of-state: $23,146"], ["created_at", "2015-03-15 17:31:06.544182"], ["updated_at", "2015-03-15 17:31:06.544182"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Nevada—​Reno"], ["tuition_fees", "in-state: $6,415, out-of-state: $20,325"], ["created_at", "2015-03-15 17:31:06.546459"], ["updated_at", "2015-03-15 17:31:06.546459"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Utah State University"], ["tuition_fees", "in-state: $6,384, out-of-state: $18,491"], ["created_at", "2015-03-15 17:31:06.548956"], ["updated_at", "2015-03-15 17:31:06.548956"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Louisiana Tech University"], ["tuition_fees", "in-state: $8,052, out-of-state: $22,635"], ["created_at", "2015-03-15 17:31:06.551619"], ["updated_at", "2015-03-15 17:31:06.551619"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of North Carolina—​Charlotte"], ["tuition_fees", "in-state: $6,179, out-of-state: $18,708"], ["created_at", "2015-03-15 17:31:06.554853"], ["updated_at", "2015-03-15 17:31:06.554853"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ashland University"], ["tuition_fees", "$19,852"], ["created_at", "2015-03-15 17:31:06.557131"], ["updated_at", "2015-03-15 17:31:06.557131"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Barry University"], ["tuition_fees", "$28,160"], ["created_at", "2015-03-15 17:31:06.559620"], ["updated_at", "2015-03-15 17:31:06.559620"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Benedictine University"], ["tuition_fees", "$26,950"], ["created_at", "2015-03-15 17:31:06.561923"], ["updated_at", "2015-03-15 17:31:06.561923"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bowie State University"], ["tuition_fees", "in-state: $6,971, out-of-state: $17,538"], ["created_at", "2015-03-15 17:31:06.564077"], ["updated_at", "2015-03-15 17:31:06.564077"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Cardinal Stritch University"], ["tuition_fees", "$26,570"], ["created_at", "2015-03-15 17:31:06.566205"], ["updated_at", "2015-03-15 17:31:06.566205"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Clark Atlanta University"], ["tuition_fees", "$21,334"], ["created_at", "2015-03-15 17:31:06.568477"], ["updated_at", "2015-03-15 17:31:06.568477"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Cleveland State University"], ["tuition_fees", "in-state: $9,473, out-of-state: $12,653"], ["created_at", "2015-03-15 17:31:06.570692"], ["updated_at", "2015-03-15 17:31:06.570692"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "East Carolina University"], ["tuition_fees", "in-state: $6,143, out-of-state: $21,340"], ["created_at", "2015-03-15 17:31:06.573086"], ["updated_at", "2015-03-15 17:31:06.573086"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "East Tennessee State University"], ["tuition_fees", "in-state: $7,985, out-of-state: $17,917"], ["created_at", "2015-03-15 17:31:06.575116"], ["updated_at", "2015-03-15 17:31:06.575116"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Florida A&M University"], ["tuition_fees", "in-state: $5,785, out-of-state: $17,725"], ["created_at", "2015-03-15 17:31:06.577346"], ["updated_at", "2015-03-15 17:31:06.577346"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Florida Atlantic University"], ["tuition_fees", "in-state: $6,039, out-of-state: $21,575"], ["created_at", "2015-03-15 17:31:06.579750"], ["updated_at", "2015-03-15 17:31:06.579750"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Florida International University"], ["tuition_fees", "in-state: $6,496, out-of-state: $18,895"], ["created_at", "2015-03-15 17:31:06.582354"], ["updated_at", "2015-03-15 17:31:06.582354"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Georgia Southern University"], ["tuition_fees", "in-state: $7,190, out-of-state: $20,086"], ["created_at", "2015-03-15 17:31:06.584635"], ["updated_at", "2015-03-15 17:31:06.584635"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Georgia State University"], ["tuition_fees", "in-state: $10,240, out-of-state: $28,450"], ["created_at", "2015-03-15 17:31:06.586841"], ["updated_at", "2015-03-15 17:31:06.586841"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Indiana State University"], ["tuition_fees", "in-state: $8,416, out-of-state: $18,346"], ["created_at", "2015-03-15 17:31:06.588984"], ["updated_at", "2015-03-15 17:31:06.588984"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Indiana University of Pennsylvania"], ["tuition_fees", "in-state: $9,470, out-of-state: $19,700"], ["created_at", "2015-03-15 17:31:06.591144"], ["updated_at", "2015-03-15 17:31:06.591144"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jackson State University"], ["tuition_fees", "in-state: $6,348, out-of-state: $15,552"], ["created_at", "2015-03-15 17:31:06.593390"], ["updated_at", "2015-03-15 17:31:06.593390"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lamar University"], ["tuition_fees", "in-state: $9,361, out-of-state: $19,681"], ["created_at", "2015-03-15 17:31:06.595650"], ["updated_at", "2015-03-15 17:31:06.595650"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lynn University"], ["tuition_fees", "$34,550"], ["created_at", "2015-03-15 17:31:06.597796"], ["updated_at", "2015-03-15 17:31:06.597796"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Middle Tennessee State University"], ["tuition_fees", "in-state: $7,370, out-of-state: $24,434"], ["created_at", "2015-03-15 17:31:06.599905"], ["updated_at", "2015-03-15 17:31:06.599905"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Montana State University"], ["tuition_fees", "in-state: $6,894, out-of-state: $21,296"], ["created_at", "2015-03-15 17:31:06.602003"], ["updated_at", "2015-03-15 17:31:06.602003"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Morgan State University"], ["tuition_fees", "in-state: $7,378, out-of-state: $16,862"], ["created_at", "2015-03-15 17:31:06.604194"], ["updated_at", "2015-03-15 17:31:06.604194"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "National-​Louis University"], ["tuition_fees", "$15,915"], ["created_at", "2015-03-15 17:31:06.606417"], ["updated_at", "2015-03-15 17:31:06.606417"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Mexico State University"], ["tuition_fees", "in-state: $6,573, out-of-state: $20,658"], ["created_at", "2015-03-15 17:31:06.608520"], ["updated_at", "2015-03-15 17:31:06.608520"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "North Carolina A&T State University"], ["tuition_fees", "in-state: $5,422, out-of-state: $16,503"], ["created_at", "2015-03-15 17:31:06.610618"], ["updated_at", "2015-03-15 17:31:06.610618"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Northern Arizona University"], ["tuition_fees", "in-state: $9,990, out-of-state: $22,510"], ["created_at", "2015-03-15 17:31:06.612683"], ["updated_at", "2015-03-15 17:31:06.612683"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Nova Southeastern University"], ["tuition_fees", "$26,700"], ["created_at", "2015-03-15 17:31:06.614993"], ["updated_at", "2015-03-15 17:31:06.614993"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Oakland University"], ["tuition_fees", "in-state: $11,460, out-of-state: $24,735"], ["created_at", "2015-03-15 17:31:06.619095"], ["updated_at", "2015-03-15 17:31:06.619095"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Old Dominion University"], ["tuition_fees", "in-state: $9,280, out-of-state: $25,030"], ["created_at", "2015-03-15 17:31:06.626652"], ["updated_at", "2015-03-15 17:31:06.626652"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Our Lady of the Lake University"], ["tuition_fees", "$24,596"], ["created_at", "2015-03-15 17:31:06.630457"], ["updated_at", "2015-03-15 17:31:06.630457"]]
+  [1m[35m (13.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Portland State University"], ["tuition_fees", "in-state: $7,878, out-of-state: $23,088"], ["created_at", "2015-03-15 17:31:06.647550"], ["updated_at", "2015-03-15 17:31:06.647550"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Regent University"], ["tuition_fees", "$16,638"], ["created_at", "2015-03-15 17:31:06.650625"], ["updated_at", "2015-03-15 17:31:06.650625"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sam Houston State University"], ["tuition_fees", "in-state: $8,932, out-of-state: $19,792"], ["created_at", "2015-03-15 17:31:06.653067"], ["updated_at", "2015-03-15 17:31:06.653067"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Carolina State University"], ["tuition_fees", "in-state: $9,776, out-of-state: $18,910"], ["created_at", "2015-03-15 17:31:06.655529"], ["updated_at", "2015-03-15 17:31:06.655529"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tennessee State University"], ["tuition_fees", "in-state: $6,776, out-of-state: $20,132"], ["created_at", "2015-03-15 17:31:06.657974"], ["updated_at", "2015-03-15 17:31:06.657974"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Texas A&M University—​Commerce"], ["tuition_fees", "in-state: $7,096, out-of-state: $17,956"], ["created_at", "2015-03-15 17:31:06.660279"], ["updated_at", "2015-03-15 17:31:06.660279"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Texas A&M University—​Corpus Christi"], ["tuition_fees", "in-state: $7,778, out-of-state: $18,398"], ["created_at", "2015-03-15 17:31:06.662568"], ["updated_at", "2015-03-15 17:31:06.662568"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Texas A&M University—​Kingsville"], ["tuition_fees", "in-state: $7,434, out-of-state: $18,294"], ["created_at", "2015-03-15 17:31:06.665101"], ["updated_at", "2015-03-15 17:31:06.665101"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Texas Southern University"], ["tuition_fees", "in-state: $7,946, out-of-state: $18,566"], ["created_at", "2015-03-15 17:31:06.667711"], ["updated_at", "2015-03-15 17:31:06.667711"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Texas Woman's University"], ["tuition_fees", "in-state: $7,560, out-of-state: $18,420"], ["created_at", "2015-03-15 17:31:06.669932"], ["updated_at", "2015-03-15 17:31:06.669932"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Trevecca Nazarene University"], ["tuition_fees", "$23,126"], ["created_at", "2015-03-15 17:31:06.672132"], ["updated_at", "2015-03-15 17:31:06.672132"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Trinity International University"], ["tuition_fees", "$27,360"], ["created_at", "2015-03-15 17:31:06.674279"], ["updated_at", "2015-03-15 17:31:06.674279"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Akron"], ["tuition_fees", "in-state: $10,320, out-of-state: $18,851"], ["created_at", "2015-03-15 17:31:06.676388"], ["updated_at", "2015-03-15 17:31:06.676388"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Alaska—​Fairbanks"], ["tuition_fees", "in-state: $6,752, out-of-state: $20,072"], ["created_at", "2015-03-15 17:31:06.679132"], ["updated_at", "2015-03-15 17:31:06.679132"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Arkansas—​Little Rock"], ["tuition_fees", "in-state: $7,909, out-of-state: $18,979"], ["created_at", "2015-03-15 17:31:06.681545"], ["updated_at", "2015-03-15 17:31:06.681545"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Colorado—​Denver"], ["tuition_fees", "in-state: $9,625, out-of-state: $26,105"], ["created_at", "2015-03-15 17:31:06.683718"], ["updated_at", "2015-03-15 17:31:06.683718"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Louisiana—​Lafayette"], ["tuition_fees", "in-state: $6,948, out-of-state: $19,348"], ["created_at", "2015-03-15 17:31:06.685856"], ["updated_at", "2015-03-15 17:31:06.685856"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Massachusetts—​Boston"], ["tuition_fees", "in-state: $11,966, out-of-state: $28,390"], ["created_at", "2015-03-15 17:31:06.688182"], ["updated_at", "2015-03-15 17:31:06.688182"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Memphis"], ["tuition_fees", "in-state: $8,619, out-of-state: $13,275"], ["created_at", "2015-03-15 17:31:06.690621"], ["updated_at", "2015-03-15 17:31:06.690621"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Missouri—​St. Louis"], ["tuition_fees", "in-state: $9,474, out-of-state: $24,795"], ["created_at", "2015-03-15 17:31:06.692988"], ["updated_at", "2015-03-15 17:31:06.692988"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Nebraska—​Omaha"], ["tuition_fees", "in-state: $6,750, out-of-state: $18,070"], ["created_at", "2015-03-15 17:31:06.695202"], ["updated_at", "2015-03-15 17:31:06.695202"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Nevada—​Las Vegas"], ["tuition_fees", "in-state: $6,690, out-of-state: $20,600"], ["created_at", "2015-03-15 17:31:06.697635"], ["updated_at", "2015-03-15 17:31:06.697635"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of New Orleans"], ["tuition_fees", "in-state: $7,482, out-of-state: $21,092"], ["created_at", "2015-03-15 17:31:06.700282"], ["updated_at", "2015-03-15 17:31:06.700282"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Northern Colorado"], ["tuition_fees", "in-state: $7,573, out-of-state: $18,817"], ["created_at", "2015-03-15 17:31:06.702618"], ["updated_at", "2015-03-15 17:31:06.702618"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of North Texas"], ["tuition_fees", "in-state: $9,706, out-of-state: $20,566"], ["created_at", "2015-03-15 17:31:06.704786"], ["updated_at", "2015-03-15 17:31:06.704786"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of South Alabama"], ["tuition_fees", "in-state: $6,948, out-of-state: $13,596"], ["created_at", "2015-03-15 17:31:06.706909"], ["updated_at", "2015-03-15 17:31:06.706909"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Southern Mississippi"], ["tuition_fees", "in-state: $6,744, out-of-state: $15,024"], ["created_at", "2015-03-15 17:31:06.709080"], ["updated_at", "2015-03-15 17:31:06.709080"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Texas—​Arlington"], ["tuition_fees", "in-state: $8,878, out-of-state: $20,274"], ["created_at", "2015-03-15 17:31:06.711464"], ["updated_at", "2015-03-15 17:31:06.711464"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Texas—​El Paso"], ["tuition_fees", "in-state: $7,018, out-of-state: $17,639"], ["created_at", "2015-03-15 17:31:06.713593"], ["updated_at", "2015-03-15 17:31:06.713593"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Texas—​San Antonio"], ["tuition_fees", "in-state: $8,737, out-of-state: $20,050"], ["created_at", "2015-03-15 17:31:06.715688"], ["updated_at", "2015-03-15 17:31:06.715688"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Toledo"], ["tuition_fees", "in-state: $9,280, out-of-state: $19,158"], ["created_at", "2015-03-15 17:31:06.717755"], ["updated_at", "2015-03-15 17:31:06.717755"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of West Florida"], ["tuition_fees", "in-state: $8,942, out-of-state: $21,824"], ["created_at", "2015-03-15 17:31:06.719847"], ["updated_at", "2015-03-15 17:31:06.719847"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "University of Wisconsin—​Milwaukee"], ["tuition_fees", "in-state: $9,882, out-of-state: $19,610"], ["created_at", "2015-03-15 17:31:06.722232"], ["updated_at", "2015-03-15 17:31:06.722232"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wayne State University"], ["tuition_fees", "in-state: $12,350, out-of-state: $26,592"], ["created_at", "2015-03-15 17:31:06.725180"], ["updated_at", "2015-03-15 17:31:06.725180"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Wichita State University"], ["tuition_fees", "in-state: $7,267, out-of-state: $16,697"], ["created_at", "2015-03-15 17:31:06.727530"], ["updated_at", "2015-03-15 17:31:06.727530"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wright State University"], ["tuition_fees", "in-state: $8,730, out-of-state: $16,910"], ["created_at", "2015-03-15 17:31:06.729692"], ["updated_at", "2015-03-15 17:31:06.729692"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Alliant International University"], ["tuition_fees", "$19,930"], ["created_at", "2015-03-15 17:31:06.731930"], ["updated_at", "2015-03-15 17:31:06.731930"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Argosy University"], ["tuition_fees", "$13,663"], ["created_at", "2015-03-15 17:31:06.734342"], ["updated_at", "2015-03-15 17:31:06.734342"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "California Institute of Integral Studies"], ["tuition_fees", "$25,713"], ["created_at", "2015-03-15 17:31:06.736552"], ["updated_at", "2015-03-15 17:31:06.736552"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Capella University"], ["tuition_fees", "$12,348"], ["created_at", "2015-03-15 17:31:06.738697"], ["updated_at", "2015-03-15 17:31:06.738697"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Colorado Technical University"], ["tuition_fees", "$11,300"], ["created_at", "2015-03-15 17:31:06.740829"], ["updated_at", "2015-03-15 17:31:06.740829"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Idaho State University"], ["tuition_fees", "in-state: $6,344, out-of-state: $18,676"], ["created_at", "2015-03-15 17:31:06.743003"], ["updated_at", "2015-03-15 17:31:06.743003"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Northcentral University"], ["tuition_fees", "N/A"], ["created_at", "2015-03-15 17:31:06.745443"], ["updated_at", "2015-03-15 17:31:06.745443"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Trident University International"], ["tuition_fees", "$6,600"], ["created_at", "2015-03-15 17:31:06.747606"], ["updated_at", "2015-03-15 17:31:06.747606"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Union Institute and University"], ["tuition_fees", "$11,904"], ["created_at", "2015-03-15 17:31:06.749724"], ["updated_at", "2015-03-15 17:31:06.749724"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "University of Phoenix"], ["tuition_fees", "N/A"], ["created_at", "2015-03-15 17:31:06.751873"], ["updated_at", "2015-03-15 17:31:06.751873"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Walden University"], ["tuition_fees", "$14,300"], ["created_at", "2015-03-15 17:31:06.754168"], ["updated_at", "2015-03-15 17:31:06.754168"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wilmington University"], ["tuition_fees", "$10,190"], ["created_at", "2015-03-15 17:31:06.756532"], ["updated_at", "2015-03-15 17:31:06.756532"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "universities"
+
+
+Started GET "/universities" for ::1 at 2015-03-16 01:31:18 +0800
+Processing by UniversitiesController#index as HTML
+  [1m[36mUniversity Load (1.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered universities/index.html.erb within layouts/application (80.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 270ms (Views: 267.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/custom-4e2f0806263ebe31c0624fbba4fc098a.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/application-505dfe7d7627c37457a78ea1b73bdc0f.css?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 01:31:18 +0800
+
+
+Started GET "/universities" for ::1 at 2015-03-16 01:39:48 +0800
+Processing by UniversitiesController#index as HTML
+  Rendered universities/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13:         </tr>
+    14:       </thead>
+    15:       <tbody>
+    16:         <% @students.each do |student| %>
+    17:               <tr>
+    18:                 <td><%= university.id %></td>
+    19:                 <td><%= university.name %></td>
+  app/views/universities/index.html.erb:16:in `_app_views_universities_index_html_erb__2123563282765730246_70128911023200'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (44.7ms)
+
+
+Started GET "/universities" for ::1 at 2015-03-16 01:40:04 +0800
+Processing by UniversitiesController#index as HTML
+  [1m[35mUniversity Load (10.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered universities/index.html.erb within layouts/application (33.2ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined local variable or method `university' for #<#<Class:0x007f9057963950>:0x007f9053ac12b0>):
+    15:       <tbody>
+    16:         <% @universities.each do |student| %>
+    17:               <tr>
+    18:                 <td><%= university.id %></td>
+    19:                 <td><%= university.name %></td>
+    20:                 <td><%= university.tuition_fees %></td>
+    21:                 <td><%= link_to 'Show', university %></td>
+  app/views/universities/index.html.erb:18:in `block in _app_views_universities_index_html_erb__2123563282765730246_70128927924140'
+  app/views/universities/index.html.erb:16:in `_app_views_universities_index_html_erb__2123563282765730246_70128927924140'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.4ms)
+
+
+Started GET "/universities" for ::1 at 2015-03-16 01:40:13 +0800
+Processing by UniversitiesController#index as HTML
+  [1m[36mUniversity Load (1.5ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered universities/index.html.erb within layouts/application (87.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 219ms (Views: 216.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/custom-4e2f0806263ebe31c0624fbba4fc098a.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/application-505dfe7d7627c37457a78ea1b73bdc0f.css?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 01:40:13 +0800
+
+
+Started GET "/mentors" for ::1 at 2015-03-16 01:41:50 +0800
+Processing by MentorsController#index as HTML
+  [1m[35mMentor Load (0.2ms)[0m  SELECT "mentors".* FROM "mentors"
+  Rendered mentors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 141ms (Views: 137.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 01:41:52 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  Rendered colleges/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 137.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 01:41:53 +0800
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 137ms (Views: 133.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 01:42:13 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 124.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for ::1 at 2015-03-16 01:42:15 +0800
+Processing by MentorsController#index as HTML
+  [1m[35mMentor Load (0.1ms)[0m  SELECT "mentors".* FROM "mentors"
+  Rendered mentors/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 141ms (Views: 140.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 01:42:16 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.1ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  Rendered colleges/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 01:42:17 +0800
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 127.2ms | ActiveRecord: 0.2ms)
