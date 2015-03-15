@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @student.name %>
@@ -11,17 +10,17 @@
 </p>
 
 <p>
-  <strong>Dob:</strong>
+  <strong>DOB:</strong>
   <%= @student.dob %>
 </p>
 
 <p>
-  <strong>Current school:</strong>
+  <strong>Current School:</strong>
   <%= @student.current_school %>
 </p>
 
 <p>
-  <strong>Current level:</strong>
+  <strong>Current Level:</strong>
   <%= @student.current_level %>
 </p>
 
@@ -31,9 +30,14 @@
 </p>
 
 <p>
-  <strong>Sat score:</strong>
+  <strong>SAT Score:</strong>
   <%= @student.sat_score %>
 </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<p>
+  <strong>Mentor:</strong>
+  <%= @student.mentor.name %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student), class: "btn btn-link"  %> |
+<%= link_to 'Back', students_path, class: "btn btn-link"  %>

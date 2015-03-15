@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :country %><br>
-    <%= f.text_field :country %>
+    <%= f.text_field :country, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :sat_min_score %><br>
-    <%= f.number_field :sat_min_score %>
+  <div class="form-group">
+    <%= f.label :sat_min_score, "SAT Min Score" %><br>
+    <%= f.number_field :sat_min_score, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :sat_max_score %><br>
-    <%= f.number_field :sat_max_score %>
+  <div class="form-group">
+    <%= f.label :sat_max_score, "SAT Max Score" %><br>
+    <%= f.number_field :sat_max_score, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :tuition_fees %><br>
-    <%= f.text_field :tuition_fees %>
+  <div class="form-group">
+    <%= f.label :tuition_fees, "Tuition Fees" %><br>
+    <%= f.text_field :tuition_fees, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>

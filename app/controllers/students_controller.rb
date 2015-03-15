@@ -15,23 +15,28 @@ class StudentsController < ApplicationController
   # GET /students/new
   def new
     @student = Student.new
+
+    @all_colleges= College.all
+    @student_college = @student.student_colleges.build
   end
 
   # GET /students/1/edit
   def edit
+    @all_colleges= College.all
+    @student_college = @student.student_colleges.build
   end
 
   # POST /students
   # POST /students.json
   def create
     @student = Student.new(student_params)
-
+    college_params[:id].each do |college|
+      if !college.empty?
+        @student.student_colleges.build(:college_id=> college)
+      end
+    end
     respond_to do |format|
       if @student.save
-        @student_college= StudentCollege.new
-        @student_college.student_id= @student.id
-        @student_college.college_id= @student.id
-        @student_college.save
         format.html { redirect_to @student, notice: 'Student was successfully created.' }
         format.json { render :show, status: :created, location: @student }
       else
@@ -44,10 +49,15 @@ class StudentsController < ApplicationController
   # PATCH/PUT /students/1
   # PATCH/PUT /students/1.json
   def update
-    arr=[600, 700, 800]
+
     respond_to do |format|
       if @student.update(student_params)
-        StudentCollege.where(:student_id=> @student.id).update_all(:id=> @student.id, :college_id=> arr)
+        @student.student_colleges.where(:student_id=> @student.id).delete_all
+        college_params[:id].each do |college|
+          if !college.empty?
+            @student.student_colleges.new(:student_id=> @student.id, :college_id=> college).save
+          end
+        end
         format.html { redirect_to @student, notice: 'Student was successfully updated.' }
         format.json { render :show, status: :ok, location: @student }
       else
@@ -60,8 +70,8 @@ class StudentsController < ApplicationController
   # DELETE /students/1
   # DELETE /students/1.json
   def destroy
-    @student.destroy
-    StudentCollege.where(:student_id=> @student.id).destroy_all
+    #@student.destroy
+    Student.where(:id=> @student.id).destroy_all
     respond_to do |format|
       format.html { redirect_to students_url, notice: 'Student was successfully destroyed.' }
       format.json { head :no_content }
@@ -76,6 +86,11 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:name, :age, :dob, :current_school, :current_level, :country, :sat_score)
+      params.require(:student).permit(:name, :age, :dob, :current_school, :current_level, :country, :sat_score, :mentor_id)
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def college_params
+      params.require(:college).permit!
     end
 end

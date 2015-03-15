@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  <strong>Dob:</strong>
+  <strong>DOB:</strong>
   <%= @mentor.dob %>
 </p>
 
@@ -25,5 +25,5 @@
   <%= @mentor.image %>
 </p>
 
-<%= link_to 'Edit', edit_mentor_path(@mentor) %> |
-<%= link_to 'Back', mentors_path %>
+<%= link_to 'Edit', edit_mentor_path(@mentor), class: "btn btn-link"  %> |
+<%= link_to 'Back', mentors_path, class: "btn btn-link"  %>

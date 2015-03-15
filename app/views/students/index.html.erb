@@ -1,39 +1,42 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Students</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Dob</th>
-      <th>Current school</th>
-      <th>Current level</th>
-      <th>Country</th>
-      <th>Sat score</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @students.each do |student| %>
-      <tr>
-        <td><%= student.name %></td>
-        <td><%= student.age %></td>
-        <td><%= student.dob %></td>
-        <td><%= student.current_school %></td>
-        <td><%= student.current_level %></td>
-        <td><%= student.country %></td>
-        <td><%= student.sat_score %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<div class="bordered-table">
+<table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>DOB</th>
+          <th>Current School</th>
+          <th>Current Level</th>
+          <th>Country</th>
+          <th>SAT Score</th>
+          <th>Mentor</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @students.each do |student| %>
+              <tr>
+                <td><%= student.id %></td>
+                <td><%= student.name %></td>
+                <td><%= student.age %></td>
+                <td><%= student.dob %></td>
+                <td><%= student.current_school %></td>
+                <td><%= student.current_level %></td>
+                <td><%= student.country %></td>
+                <td><%= student.sat_score %></td>
+                <td><%= student.mentor.name %></td>
+                <td><%= link_to 'Show', student, class: "btn btn-link"  %></td>
+                <td><%= link_to 'Edit', edit_student_path(student), class: "btn btn-link"  %></td>
+                <td><%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link"  %></td>
+              </tr>
+            <% end %>
+      </tbody>
+    </table>
+    <%= link_to 'New Student', new_student_path, class: "btn btn-link"  %>
+</div>
 <br>
 
-<%= link_to 'New Student', new_student_path %>
