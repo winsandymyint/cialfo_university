@@ -1,6 +1,5 @@
 class Student < ActiveRecord::Base
 	
-	validates :age, inclusion: { in: 0..9 }
 	validates :age,:name,presence: true
 	validates :age, numericality: true
 	# validates :age, numericality: true

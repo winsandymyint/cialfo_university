@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 20150316150954) do
     t.integer  "mentor_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-    t.string   "sex"
   end
 
   create_table "universities", force: :cascade do |t|
