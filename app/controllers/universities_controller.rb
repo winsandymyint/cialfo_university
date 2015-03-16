@@ -4,7 +4,7 @@ class UniversitiesController < ApplicationController
   # GET /universities
   # GET /universities.json
   def index
-    @universities = University.all.paginate(:page => params[:page], :per_page => 30)
+    @universities = University.all
     @universities = @universities.where(name: params["name"]) if params["name"].present?
     @universities = @universities.where(tuition_fees: params["tuition_fees"]) if params["tuition_fees"].present?
   end
