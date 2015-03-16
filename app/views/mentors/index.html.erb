@@ -22,7 +22,8 @@
                 <td><%= mentor.age %></td>
                 <td><%= mentor.dob %></td>
                 <td><%= mentor.bio %></td>
-                <td><%= mentor.image %></td>
+                <td width="120" height="120"><%= image_tag mentor.image, class: "thumbnail" %></td>
+                <!-- <td><%# mentor.image %></td> -->
                 <td><%= link_to mentor, class: "btn btn-default" do %>
                   <i class="glyphicon glyphicon-eye-open"></i>
                   <% end %>

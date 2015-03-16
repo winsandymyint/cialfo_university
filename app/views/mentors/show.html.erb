@@ -22,7 +22,8 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @mentor.image %>
+  <%= image_tag @mentor.image, class: "thumbnail resize" %>
+  <%# @mentor.image %>
 </p>
 
 <%= link_to 'Edit', edit_mentor_path(@mentor), class: "btn btn-link"  %> |
