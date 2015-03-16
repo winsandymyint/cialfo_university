@@ -1,7 +1,7 @@
 class HomesController < ApplicationController
   def index
   	colleges = College.all
-	colleges = College.joins(:students).where("colleges.name Like (?)",params[:name]).uniq if params[:name].present?
+	colleges = College.joins(:students).where("colleges.name Like (?)", "%#{params[:name]}%").uniq if params[:name].present?
     @temp_arr = []
 	colleges.each do |college|
 		temp_students = []

@@ -5,8 +5,9 @@ class UniversitiesController < ApplicationController
   # GET /universities.json
   def index
     @universities = University.all
-    @universities = @universities.where(name: params["name"]) if params["name"].present?
-    @universities = @universities.where(tuition_fees: params["tuition_fees"]) if params["tuition_fees"].present?
+    @universities = @universities.where("name Like (?)", "%#{params["name"]}%") if params["name"].present?
+    @universities = @universities.where("tuition_fees Like (?)", "%#{params["tuition_fees"]}%") if params["tuition_fees"].present?
+    
   end
 
   # GET /universities/1
