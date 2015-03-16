@@ -4,9 +4,15 @@ class CollegesController < ApplicationController
   # GET /colleges
   # GET /colleges.json
   def index
-    @colleges = College.all
+    #@colleges = College.all
+
+    @colleges = College.all.paginate(:page => params[:page], :per_page => 30)
+    #@colleges = @colleges.where(name: params["colleges"])
   end
 
+  def college_filter
+    @colleges = @colleges.where(name: params["colleges"])
+  end
   # GET /colleges/1
   # GET /colleges/1.json
   def show

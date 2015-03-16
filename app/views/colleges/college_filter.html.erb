@@ -32,20 +32,21 @@
                 <td><%= college.sat_min_score %></td>
                 <td><%= college.sat_max_score %></td>
                 <td><%= college.tuition_fees %></td>
-                <td><%= link_to college, class: "btn btn-default" do %><i class="glyphicon glyphicon-eye-open"></i>
-                <% end %>
-                <%= link_to edit_college_path(college), class: "btn btn-default" do %><i class="glyphicon glyphicon-pencil"></i>
-                <% end %>
-                <%= link_to college, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" do %><i class="glyphicon glyphicon-remove"></i><% end %>
-                </td>
+                <td><%= link_to college, class: "btn btn-default" do %>
+                  <i class="glyphicon glyphicon-eye-open"></i>
+                  <% end %>
+                <%= link_to edit_college_path(college), class: "btn btn-default" do %>
+                  <i class="glyphicon glyphicon-pencil"></i>
+                  <% end %>
+                <%= link_to college, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" do %>
+                  <i class="glyphicon glyphicon-remove"></i>
+                  <% end %></td>
               </tr>
-        <% end %>
+            <% end %>
       </tbody>
     </table>
     <%= link_to new_college_path, class: "btn btn-default" do %>
       <i class="glyphicon glyphicon-plus"></i>New College
     <% end %>
-    <br />
-    <%= will_paginate @colleges %>
 </div>
 <br>

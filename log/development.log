@@ -39761,3 +39761,2417 @@ Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:05:08 +0800
+
+
+Started GET "/students" for ::1 at 2015-03-16 03:17:24 +0800
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mMentor Load (0.1ms)[0m  [1mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 134ms (Views: 133.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:17:24 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:18:04 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges"
+  Rendered colleges/index.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x007ff190819fc8>:0x007ff1908226f0>):
+    1: <p id="notice"><%= notice %></p>
+    2: <div class="container">
+    3:   <div class="filter">
+    4:     <%= form_tag posts_path, method: :get do %>
+    5:       <%= label_tag :colleges %>
+    6:       <%= text_field_tag :colleges %>
+    7:  
+  app/views/colleges/index.html.erb:4:in `_app_views_colleges_index_html_erb___2216143556779815163_70337744144760'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.4ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:18:05 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  Rendered colleges/index.html.erb within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x007ff190819fc8>:0x007ff190ca4ef8>):
+    1: <p id="notice"><%= notice %></p>
+    2: <div class="container">
+    3:   <div class="filter">
+    4:     <%= form_tag posts_path, method: :get do %>
+    5:       <%= label_tag :colleges %>
+    6:       <%= text_field_tag :colleges %>
+    7:  
+  app/views/colleges/index.html.erb:4:in `_app_views_colleges_index_html_erb___2216143556779815163_70337746459840'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:18:32 +0800
+Processing by CollegesController#index as HTML
+  Rendered colleges/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"colleges"} missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: <div class="container">
+    3:   <div class="filter">
+    4:     <%= form_tag college_path, method: :get do %>
+    5:       <%= label_tag :colleges %>
+    6:       <%= text_field_tag :colleges %>
+    7:  
+  app/views/colleges/index.html.erb:4:in `_app_views_colleges_index_html_erb___2216143556779815163_70337726761140'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (30.9ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:20:52 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.4ms)[0m  SELECT "colleges".* FROM "colleges"
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18faf0680>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:22:10 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff19084bb18>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (31.7ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:23:25 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.4ms)[0m  SELECT "colleges".* FROM "colleges"
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18e4218a0>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (30.8ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:23:26 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff1908f08c0>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (32.9ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:23:26 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges"
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18fefca80>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.0ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:23:33 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL[0m
+  Rendered colleges/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 127.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:23:33 +0800
+
+
+Started GET "/colleges/new" for ::1 at 2015-03-16 03:23:39 +0800
+Processing by CollegesController#new as HTML
+  Rendered colleges/_form.html.erb (3.4ms)
+  Rendered colleges/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 157ms (Views: 152.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/colleges" for ::1 at 2015-03-16 03:23:55 +0800
+Processing by CollegesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5sW9wOJ72aIH2SCkWRX++TmTUMXm9N0LImJ16lohXJRTwMkOeoNPfJbry13k/W3fM9PXvgHyFX3CQzxANZeGDw==", "college"=>{"name"=>"Manchester", "country"=>"UK", "sat_min_score"=>"700", "sat_max_score"=>"900", "tuition_fees"=>"40000"}, "commit"=>"Create College"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "colleges" ("name", "country", "sat_min_score", "sat_max_score", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manchester"], ["country", "UK"], ["sat_min_score", 700], ["sat_max_score", 900], ["tuition_fees", 40000.0], ["created_at", "2015-03-15 19:23:55.220910"], ["updated_at", "2015-03-15 19:23:55.220910"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/colleges/2
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/colleges/2" for ::1 at 2015-03-16 03:23:55 +0800
+Processing by CollegesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCollege Load (0.5ms)[0m  [1mSELECT  "colleges".* FROM "colleges" WHERE "colleges"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered colleges/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 207ms (Views: 203.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:23:55 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:23:56 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL
+  Rendered colleges/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 127.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:23:57 +0800
+
+
+Started GET "/colleges/new" for ::1 at 2015-03-16 03:23:58 +0800
+Processing by CollegesController#new as HTML
+  Rendered colleges/_form.html.erb (3.3ms)
+  Rendered colleges/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 141.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:24:01 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL[0m
+  Rendered colleges/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/colleges/new" for ::1 at 2015-03-16 03:24:04 +0800
+Processing by CollegesController#new as HTML
+  Rendered colleges/_form.html.erb (2.8ms)
+  Rendered colleges/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 132.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/colleges/new" for ::1 at 2015-03-16 03:24:15 +0800
+Processing by CollegesController#new as HTML
+  Rendered colleges/_form.html.erb (3.3ms)
+  Rendered colleges/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 163ms (Views: 152.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:24:15 +0800
+
+
+Started POST "/colleges" for ::1 at 2015-03-16 03:24:27 +0800
+Processing by CollegesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tgehw12i0qqE6VTRzCmZkD4yyjvvUSkY/L3JLmRM9FMDAtUNxVpEdBXbvyhxwQq2NHJNQAhX4W4cnICEC/ouyA==", "college"=>{"name"=>"Manchester", "country"=>"UK", "sat_min_score"=>"600", "sat_max_score"=>"700", "tuition_fees"=>"40000"}, "commit"=>"Create College"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "country", "sat_min_score", "sat_max_score", "tuition_fees", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manchester"], ["country", "UK"], ["sat_min_score", 600], ["sat_max_score", 700], ["tuition_fees", 40000.0], ["created_at", "2015-03-15 19:24:27.795772"], ["updated_at", "2015-03-15 19:24:27.795772"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/colleges/3
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/colleges/3" for ::1 at 2015-03-16 03:24:27 +0800
+Processing by CollegesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT  "colleges".* FROM "colleges" WHERE "colleges"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered colleges/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 171ms (Views: 168.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:24:28 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:24:30 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.3ms)[0m  SELECT "colleges".* FROM "colleges"
+  Rendered colleges/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:24:30 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:24:46 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  Rendered colleges/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 136ms (Views: 135.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:24:46 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:24:54 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.3ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL
+  Rendered colleges/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 145ms (Views: 140.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:24:54 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:55 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:55 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:55 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:24:55 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:24:55 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:24:55 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:25:00 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.3ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL[0m
+  Rendered colleges/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 143.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:00 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:25:20 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?  [["name", "Manchester"]]
+  Rendered colleges/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 149ms (Views: 143.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:20 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=colleges" for ::1 at 2015-03-16 03:25:26 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"colleges"}
+  [1m[36mCollege Load (0.1ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?[0m  [["name", "colleges"]]
+  Rendered colleges/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:26 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:25:30 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?  [["name", "Manchester"]]
+  Rendered colleges/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 146ms (Views: 145.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:30 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=" for ::1 at 2015-03-16 03:25:33 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>""}
+  [1m[36mCollege Load (0.1ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?[0m  [["name", ""]]
+  Rendered colleges/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 151ms (Views: 149.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:33 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=" for ::1 at 2015-03-16 03:25:35 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>""}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?  [["name", ""]]
+  Rendered colleges/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 152ms (Views: 150.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=" for ::1 at 2015-03-16 03:25:35 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>""}
+  [1m[36mCollege Load (0.1ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?[0m  [["name", ""]]
+  Rendered colleges/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 141ms (Views: 140.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:35 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=" for ::1 at 2015-03-16 03:25:36 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>""}
+  [1m[35mCollege Load (0.1ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?  [["name", ""]]
+  Rendered colleges/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 139.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:36 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:37 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:37 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:37 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:37 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:37 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:25:46 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL[0m
+  Rendered colleges/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:25:47 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:30:05 +0800
+Processing by CollegesController#index as HTML
+  Rendered colleges/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/dede/cialfo/app/views/colleges/index.html.erb:8: syntax error, unexpected ')'
+...=( submit_tag "Search", name: );@output_buffer.safe_append='
+...                               ^
+/Users/dede/cialfo/app/views/colleges/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/dede/cialfo/app/views/colleges/index.html.erb:27: syntax error, unexpected keyword_do_block, expecting ')'
+'.freeze;         @colleges.each do |college| 
+                                   ^
+/Users/dede/cialfo/app/views/colleges/index.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;             end 
+                         ^
+/Users/dede/cialfo/app/views/colleges/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/dede/cialfo/app/views/colleges/index.html.erb:56: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/colleges/index.html.erb:8: syntax error, unexpected ')'
+  app/views/colleges/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+  app/views/colleges/index.html.erb:27: syntax error, unexpected keyword_do_block, expecting ')'
+  app/views/colleges/index.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+  app/views/colleges/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/colleges/index.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (31.0ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:30:21 +0800
+Processing by CollegesController#index as HTML
+  Rendered colleges/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"colleges"} missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: <div class="container">
+    3:   <div class="filter">
+    4:     <%= form_tag college_path, method: :get do %>
+    5:       <%= label_tag :colleges %>
+    6:       <%= text_field_tag :colleges %>
+    7:  
+  app/views/colleges/index.html.erb:4:in `_app_views_colleges_index_html_erb___2216143556779815163_70337738864040'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:30:27 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.4ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL
+  Rendered colleges/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 138ms (Views: 136.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:30:27 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:30:34 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges" WHERE "colleges"."name" = ?[0m  [["name", "Manchester"]]
+  Rendered colleges/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:30:34 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:30:49 +0800
+Processing by CollegesController#index as HTML
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges" WHERE "colleges"."name" IS NULL
+  Rendered colleges/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 129.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:30:50 +0800
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 03:33:14 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.5ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  Rendered colleges/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 161ms (Views: 156.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:33:14 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=1" for ::1 at 2015-03-16 03:33:17 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"1"}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges"
+  Rendered colleges/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 146ms (Views: 144.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:33:17 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:33:41 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  Rendered colleges/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 142.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:33:42 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:35:51 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.4ms)[0m  SELECT "colleges".* FROM "colleges"
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18b1db8f0>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (35.3ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:36:56 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18ac67770>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:36:57 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges"
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18fe0d408>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (30.0ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:36:58 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18e6fbe68>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (31.0ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:36:58 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT "colleges".* FROM "colleges"
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff18fedd4c8>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (33.3ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:36:58 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `paginate' for #<College::ActiveRecord_Relation:0x007ff190d51f90>):
+  app/controllers/colleges_controller.rb:9:in `index'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.2ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.5ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:37:19 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.2ms)[0m  SELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0
+  Rendered colleges/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 303ms (Views: 284.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:37:19 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:37:57 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0[0m
+  Rendered colleges/index.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::BootstrapPagination):
+    49:       <i class="glyphicon glyphicon-plus"></i>New College
+    50:     <% end %>
+    51:     <br />
+    52:     <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+    53: </div>
+    54: <br>
+  app/views/colleges/index.html.erb:52:in `_app_views_colleges_index_html_erb__1948914167767682817_70286312891780'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.2ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:38:19 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.3ms)[0m  SELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0
+  Rendered colleges/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::BootstrapPagination):
+    49:       <i class="glyphicon glyphicon-plus"></i>New College
+    50:     <% end %>
+    51:     <br />
+    52:     <%= will_paginate @colleges, renderer: BootstrapPagination::Rails %>
+    53: </div>
+    54: <br>
+  app/views/colleges/index.html.erb:52:in `_app_views_colleges_index_html_erb__1948914167767682817_70286304484800'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.0ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:39:32 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0[0m
+  Rendered colleges/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::BootstrapPagination):
+    49:       <i class="glyphicon glyphicon-plus"></i>New College
+    50:     <% end %>
+    51:     <br />
+    52:     <%= will_paginate @colleges, renderer: BootstrapPagination::Rails %>
+    53: </div>
+    54: <br>
+  app/views/colleges/index.html.erb:52:in `_app_views_colleges_index_html_erb__1948914167767682817_70286355465740'
+
+
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.9ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dede/.rvm/gems/ruby-2.1.3/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (36.7ms)
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:39:56 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[35mCollege Load (0.3ms)[0m  SELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0
+  Rendered colleges/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:39:56 +0800
+
+
+Started GET "/colleges?utf8=%E2%9C%93&colleges=Manchester" for ::1 at 2015-03-16 03:41:09 +0800
+Processing by CollegesController#index as HTML
+  Parameters: {"utf8"=>"✓", "colleges"=>"Manchester"}
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0[0m
+  Rendered colleges/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 142.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 03:41:10 +0800
+
+
+Started GET "/mentors" for ::1 at 2015-03-16 11:44:42 +0800
+Processing by MentorsController#index as HTML
+  [1m[35mMentor Load (0.2ms)[0m  SELECT "mentors".* FROM "mentors"
+  Rendered mentors/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 160ms (Views: 156.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:44:44 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.2ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (26.3ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 157.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/colleges" for ::1 at 2015-03-16 11:44:46 +0800
+Processing by CollegesController#index as HTML
+  [1m[36mCollege Load (0.2ms)[0m  [1mSELECT  "colleges".* FROM "colleges" LIMIT 30 OFFSET 0[0m
+  Rendered colleges/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 163ms (Views: 161.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for ::1 at 2015-03-16 11:44:48 +0800
+Processing by MentorsController#index as HTML
+  [1m[35mMentor Load (0.1ms)[0m  SELECT "mentors".* FROM "mentors"
+  Rendered mentors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 128.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:44:49 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.2ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 146ms (Views: 144.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:56:18 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.1ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 143ms (Views: 142.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 11:56:18 +0800
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:56:24 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.1ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 128.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 11:56:24 +0800
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:56:24 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.1ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 134ms (Views: 133.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:56:25 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.1ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 134ms (Views: 133.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/custom-7511133861af8e5af108cdc767032d4d.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/mentors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/application-32f849c3a7fe3a1c1d3a9511e8da31eb.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/scaffolds-87501089028cd3da4b4a68da12b4fb5c.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/universities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/bootstrap-f069863cd7c15927c7faef4bba9fc907.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/mentors-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/universities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/application-4bb65ac7e0086b3f6236762262e2a4b3.js?body=1" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-03-16 11:56:25 +0800
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:56:27 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.1ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 127.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2015-03-16 11:56:28 +0800
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mMentor Load (0.1ms)[0m  SELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 131.6ms | ActiveRecord: 0.3ms)
