@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
-
+<div class="container">
+  <div class="filter">
+    <%= form_tag universities_path, method: :get do %>
+      <%= label_tag :name %>
+      <%= text_field_tag :name, params[:name] %>
+      <%= label_tag :tuition_fees %>
+      <%= text_field_tag :tuition_fees, params[:tuition_fees] %>
+      <%= submit_tag "Search", name: nil %>
+    <% end %>
+  </div>
+</div>
 <h1>Scrapping data from <a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities/data">here</a>.</h1>
 
 <div class="bordered-table">

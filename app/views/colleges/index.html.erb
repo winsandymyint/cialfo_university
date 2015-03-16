@@ -1,15 +1,14 @@
 <p id="notice"><%= notice %></p>
-<div class="container">
+<h1>Listing Colleges</h1>
+<br />
   <div class="filter">
     <%= form_tag colleges_path, method: :get do %>
-      <%= label_tag :colleges %>
-      <%= text_field_tag :colleges %>
+      <%# label_tag :university_name %>
+      <%= text_field_tag :name %>
  
       <%= submit_tag "Search", name: nil %>
     <% end %>
   </div>
-
-<h1>Listing Colleges</h1>
 <div class="bordered-table">
 <table class="table table-striped">
       <thead>

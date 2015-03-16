@@ -7,7 +7,7 @@ class CollegesController < ApplicationController
     #@colleges = College.all
 
     @colleges = College.all.paginate(:page => params[:page], :per_page => 30)
-    #@colleges = @colleges.where(name: params["colleges"])
+    @colleges = @colleges.where(name: params["name"]) if params["name"].present?
   end
 
   def college_filter
