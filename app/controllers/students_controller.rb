@@ -15,7 +15,6 @@ class StudentsController < ApplicationController
   # GET /students/new
   def new
     @student = Student.new
-
     @all_colleges= College.all
     @student_college = @student.student_colleges.build
   end
@@ -35,6 +34,8 @@ class StudentsController < ApplicationController
         @student.student_colleges.build(:college_id=> college)
       end
     end
+    @all_colleges= College.all
+    @student_college = @student.student_colleges.build
     respond_to do |format|
       if @student.save
         format.html { redirect_to @student, notice: 'Student was successfully created.' }

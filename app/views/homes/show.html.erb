@@ -7,7 +7,7 @@
       <%# label_tag :university_name %>
       <%= text_field_tag :name %>
  
-      <%= submit_tag "Search", class: 'btn', name: nil %>
+      <%= submit_tag "Search", name: nil %>
     <% end %>
   </div>
 
@@ -24,11 +24,10 @@
       <tbody>
         <% @students.each do |student| %>
               <tr>
-                <td><%= student["id"] %></td>
-                <td><%= student["name"] %></td>
-                <td><%= student["college"] %></td>
-                <td><%= student["sat_score"] %></td>
-
+                <td><%= student.id %></td>
+                <td><%= student.name %></td>
+                <td><%= student.name %></td>
+                <td><%= student.sat_score %></td>
               </tr>
             <% end %>
       </tbody>

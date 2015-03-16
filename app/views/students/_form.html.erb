@@ -1,4 +1,4 @@
-<%= form_for(@student) do |f| %>
+<%= form_for(@student,:html => {:class => "form-horizontal"}) do |f| %>
   <% if @student.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
@@ -11,21 +11,65 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, class: "form-control"%>
+
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, class: "form-control"%>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :age %><br>
+        <%= f.number_field :age, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :dob, "DOB" %><br>
+        <span class="datetime"> <%= f.date_select :dob, :start_year => Time.now.year - 60, :end_year => Time.now.year - 16, class: 'form-control' %></span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :current_school, "Current School" %><br>
+        <%= f.text_field :current_school, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :age %><br>
+        <%= f.number_field :age, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :age %><br>
+        <%= f.number_field :age, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :age %><br>
+        <%= f.number_field :age, class: "form-control" %>
+      </div>
+    </div>
   </div>
   <div class="form-group">
-    <%= f.label :age %><br>
-    <%= f.number_field :age, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :dob, "DOB" %><br>
-    <%= f.datetime_select :dob %>
-  </div>
-  <div class="form-group">
-    <%= f.label :current_school, "Current School" %><br>
-    <%= f.text_field :current_school, class: "form-control" %>
+    
   </div>
   <div class="form-group">
     <%= f.label :current_level, "Current Level" %><br>
@@ -47,7 +91,7 @@
   <div class="form-group">
     <%= fields_for(@student_college) do |sc| %>
       <%= label_tag "college_id" %><br>
-      <%= collection_select(:college, :id, @all_colleges, :id, :name, {}, {:multiple=> true}) %>
+      <%= collection_select(:college, :id, @all_colleges, :id, :name, {}, {:multiple=> true, class: 'form-control'}) %>
     <% end %>
   </div>
   <div class="form-group">
