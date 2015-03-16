@@ -10,8 +10,14 @@
       </ul>
     </div>
   <% end %>
-
-
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-xs-6 col-md-4">
       <div class="form-group">
@@ -20,27 +26,29 @@
       </div>
     </div>
   </div>
-
-  
-  <div class="form-group">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, class: "form-control" %>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :dob, "DOB" %><br>
+        <span class="datetime"> <%= f.date_select :dob, :start_year => Time.now.year - 60, :end_year => Time.now.year - 16 %></span>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <%= f.label :age %><br>
-    <%= f.number_field :age, class: "form-control" %>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :bio %><br>
+        <%= f.text_area :bio, class: "form-control" %>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <%= f.label :dob, "DOB" %><br>
-    <span class="datetime"> <%= f.date_select :dob, :start_year => Time.now.year - 60, :end_year => Time.now.year - 16 %></span>
-  </div>
-  <div class="form-group">
-    <%= f.label :bio %><br>
-    <%= f.text_area :bio, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :image %><br>
-    <%= f.file_field :image, class: "" %>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :image %><br>
+        <%= f.file_field :image, class: "" %>
+      </div>
+    </div>
   </div>
   <div class="actions">
     <%= f.submit class: "btn btn-primary" %>

@@ -47,52 +47,44 @@
   <div class="row">
     <div class="col-xs-6 col-md-4">
       <div class="form-group">
-        <%= f.label :age %><br>
-        <%= f.number_field :age, class: "form-control" %>
+        <%= f.label :current_level, "Current Level" %><br>
+        <%= f.text_field :current_level, class: "form-control" %>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-6 col-md-4">
       <div class="form-group">
-        <%= f.label :age %><br>
-        <%= f.number_field :age, class: "form-control" %>
+        <%= f.label :country %><br>
+        <%= f.text_field :country, class: "form-control" %>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-6 col-md-4">
       <div class="form-group">
-        <%= f.label :age %><br>
-        <%= f.number_field :age, class: "form-control" %>
+        <%= f.label :sat_score, "SAT Score" %><br>
+        <%= f.number_field :sat_score, class: "form-control" %>
       </div>
     </div>
   </div>
-  <div class="form-group">
-    
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= f.label :mentor_id %><br>
+        <%= f.select 'mentor_id', options_from_collection_for_select(Mentor.all, :id, :name),{}, {class: "form-control"} %>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <%= f.label :current_level, "Current Level" %><br>
-    <%= f.text_field :current_level, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :country %><br>
-    <%= f.text_field :country, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :sat_score, "SAT Score" %><br>
-    <%= f.number_field :sat_score, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= f.label :mentor_id %><br>
-    <%= f.select 'mentor_id', options_from_collection_for_select(Mentor.all, :id, :name),{}, {class: "form-control"} %>
-  </div>
-
-  <div class="form-group">
-    <%= fields_for(@student_college) do |sc| %>
-      <%= label_tag "college_id" %><br>
-      <%= collection_select(:college, :id, @all_colleges, :id, :name, {}, {:multiple=> true, class: 'form-control'}) %>
-    <% end %>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="form-group">
+        <%= fields_for(@student_college) do |sc| %>
+          <%= label_tag "college_id" %><br>
+          <%= collection_select(:college, :id, @all_colleges, :id, :name, {}, {:multiple=> true, class: 'form-control'}) %>
+        <% end %>
+      </div>
+    </div>
   </div>
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>
